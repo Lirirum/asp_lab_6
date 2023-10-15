@@ -1,0 +1,53 @@
+﻿@using WebApplication8.Modeles;
+@using WebApplication8;
+
+@{
+    Layout = null;
+}
+@model List<Product>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="width=device-width">
+    <title>Створення замовлення</title>
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+<body>
+<div class="main">
+@using (Html.BeginForm("OrderComplete", "Order", FormMethod.Post))
+{
+    @for(int i = 0; i < Model.Count; i++)
+    {
+
+        <h3>Товар №@Model[@i].Id</h3>
+        <div>
+                <label for="products[@i].Name"> Тип піци:</label>
+                <input type="text" id="products[@i].Name" name="products[@i].Name"  required/>
+        </div>
+
+
+
+        <div>
+                <label for="products[@i].Size">Розмір піци:</label>
+                    <select id="products[@i].Size" name="products[@i].Size" required>
+                <option>Маленька</option>
+                <option>Середня</option>
+                <option>Велика</option>
+            </select>
+
+        </div>
+        <div>
+                <label for="products[@i].Features">Побажання:</label>
+                <input type="text" id="products[@i].Features" name="products[@i].Features" />
+        </div>
+
+    }
+    <div>
+        <input type="submit" value="Підтвердити" />
+    </div>
+}
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+﻿@using WebApplication8.Modeles;
+@using WebApplication8;
+
+
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="width=device-width" />
+    <title>Кількість товару</title>
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+<body>
+    <div class="main">
+    @using (Html.BeginForm("OrderProducts", "Order", FormMethod.Post))
+    {
+         <h2>Кількість товару в замовленні</h2>
+        <div>
+            <label for="Quantity">Вкажіть кількість піци</label>
+            <input type="number" id="quantity" name="Quantity" step="1" min="1" required />
+        </div>
+  
+        <div>
+            <input type="submit" value="Підтвердити" />
+        </div>
+    }
+    </div>
+</body>
+</html>

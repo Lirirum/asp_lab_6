@@ -1,0 +1,43 @@
+﻿@using WebApplication8.Modeles;
+@model List<Product>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="width=device-width" />
+    <title>Завершення замовлення</title>
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+<body>
+
+<div class="container">
+ <h2>Замовлення:</h2>
+<table>
+    <tr>
+        <th>№</th>
+        <th>Товар</th>
+        <th>Розмір</th>
+        <th>Особливості</th>
+    </tr>
+     @for (int i = 0; i < Model.Count; i++)
+    {
+        <tr>
+            <td>@(i+1)</td>
+            <td>@Model[i].Name</td>          
+            <td>@Model[i].Size</td>
+            <td>@Model[i].Features</td>        
+        </tr>
+    }
+</table>
+        <form action="/Order/Index" method="post" class="custom" >
+    
+            <button type="submit">Повернутися до вікна реєстрації</button>
+        </form>
+</div>
+   
+
+</body>
+</html>

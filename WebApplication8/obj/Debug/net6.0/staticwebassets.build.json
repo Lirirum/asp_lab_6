@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "xXKhpYxZgtWwD3CZr9X/vx8LyPrRSVmguQvv1cQwiJ0=",
+  "Source": "WebApplication8",
+  "BasePath": "_content/WebApplication8",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WebApplication8\\wwwroot",
+      "Source": "WebApplication8",
+      "ContentRoot": "C:\\Users\\Lirirum\\source\\repos\\WebApplication8\\WebApplication8\\wwwroot\\",
+      "BasePath": "_content/WebApplication8",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Lirirum\\source\\repos\\WebApplication8\\WebApplication8\\wwwroot\\css\\style.css",
+      "SourceId": "WebApplication8",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lirirum\\source\\repos\\WebApplication8\\WebApplication8\\wwwroot\\",
+      "BasePath": "_content/WebApplication8",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
+    }
+  ]
+}
